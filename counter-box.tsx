@@ -1,0 +1,201 @@
+//@ts-nocheck
+
+import { MinusCircle, PlusCircle } from 'lucide-react-native';
+import React, { useState } from 'react';
+import {
+  Dimensions,
+  PixelRatio,
+  Pressable,
+  Text,
+  TextInput,
+  View,
+} from 'react-native';
+import tw from './tailwind';
+import { neutral100, secondary } from './colors';
+import { Platform } from 'react-native';
+
+interface CounterProps {
+  onTextChanged: (counterValue: string) => void;
+  counterValue?: number;
+  title?: string;
+  textStyle?: TextStyle;
+  viewStyle?: string;
+}
+
+export const CounterBox = ({
+  onTextChanged,
+  counterValue,
+  title,
+  textStyle,
+  viewStyle
+}: CounterProps) => {
+  const [count, setCount] = useState(counterValue || 1);
+
+  function addQuantity() {
+    let temp = count + 1;
+    setCount(temp);
+    onTextChanged(temp.toString());
+  }
+
+  function reduceQuantity() {
+    if (count > 1) {
+      let temp = count - 1;
+      setCount(temp);
+      onTextChanged(temp.toString());
+    }
+  }
+
+  function getValue() {
+    if (
+      Number.isNaN(count) ||
+      count < 1 ||
+      count === 0 ||
+      count === null ||
+      count === undefined
+    ) {
+      return '1';
+    } else {
+      return count.toString();
+    }
+  }
+
+  return (
+    <View
+      style={[tw`flex-row justify-center items-center h-12 w-full bg-neutral-100 rounded-lg px-2`, viewStyle]}
+    >
+      {title && (
+        <Text style={[tw`text-secondary text-base grow font-display`, textStyle]}>{title}</Text>
+      )}
+      <View
+        style={tw`flex-row flex-1 w-1/3 h-full justify-between self-center items-center`}
+      >
+        <Pressable onPress={reduceQuantity}>
+          <MinusCircle size={48} fill={secondary} color={neutral100} />
+        </Pressable>
+        {Platform.OS === 'ios' ? (
+          <TextInput
+            style={[tw`w-1/3 text-secondary font-bold text-lg text-center h-full pb-2 font-body`, textStyle]}
+            value={getValue()}
+            onChangeText={(counter) => {
+              setCount(parseInt(counter));
+              onTextChanged(counter);
+            }}
+            keyboardType="number-pad"
+            maxLength={3}
+          />
+        ) : (
+          <TextInput
+            style={[tw`w-1/3 text-neutral-600 font-bold text-lg text-center h-full font-body`, textStyle]}
+            value={getValue()}
+            onChangeText={(counter) => {
+              setCount(parseInt(counter));
+              onTextChanged(counter);
+            }}
+            keyboardType="number-pad"
+            maxLength={3}
+          />
+        )}
+        <Pressable onPress={addQuantity} style={{ right: 0 }}>
+          <PlusCircle size={48} fill={secondary} color={neutral100} />
+        </Pressable>
+      </View>
+    </View>
+  );
+};
+
+// export const MiniCounterBox = ({
+//   onTextChanged,
+//   counterValue,
+//   title,
+// }: CounterProps) => {
+//   const [count, setCount] = useState(counterValue || 1);
+
+//   function addQuantity() {
+//     setCount(count + 1);
+//   }
+
+//   function reduceQuantity() {
+//     if (count > 1) {
+//       setCount(count - 1);
+//     }
+//   }
+
+//   function getValue() {
+//     if (
+//       Number.isNaN(count) ||
+//       count < 1 ||
+//       count === 0 ||
+//       count === null ||
+//       count === undefined
+//     ) {
+//       return '1';
+//     } else {
+//       return count.toString();
+//     }
+//   }
+
+//   return (
+//     <View
+//       style={{
+//         flexDirection: 'row',
+//         justifyContent: 'center',
+//         alignContent: 'center',
+//         alignItems: 'center',
+//         height: PixelRatio.getPixelSizeForLayoutSize(20),
+//         width: '30%',
+//         backgroundColor: '#FFF',
+//         borderRadius: 10,
+//         paddingLeft: PixelRatio.getPixelSizeForLayoutSize(4),
+//         paddingRight: PixelRatio.getPixelSizeForLayoutSize(4),
+//       }}
+//     >
+//       <Text
+//         style={{
+//           textAlign: 'center',
+//           color: '#071D4D',
+//           fontFamily: 'OutfitBold',
+//           fontSize: 16,
+//         }}
+//       >
+//         {title}
+//       </Text>
+//       <View
+//         style={{
+//           flex: 1,
+//           flexDirection: 'row',
+//           width: PixelRatio.getPixelSizeForLayoutSize(40),
+//           right: PixelRatio.getPixelSizeForLayoutSize(5),
+//         }}
+//       >
+//         <Pressable onPress={reduceQuantity}>
+//           <MinusCircle
+//             size={Dimensions.get('window').width * 0.05}
+//             color="#071D4D"
+//           />
+//         </Pressable>
+//         <TextInput
+//           style={{
+//             width: '27%',
+//             textAlign: 'center',
+//             color: '#071D4D',
+//             fontFamily: 'OutfitBold',
+//             fontSize: 16,
+//           }}
+//           value={getValue()}
+//           onChangeText={(counter) => {
+//             setCount(parseInt(counter));
+//             onTextChanged(counter);
+//           }}
+//           keyboardType="number-pad"
+//           maxLength={3}
+//         />
+//         <Pressable onPress={addQuantity} style={{ right: 0 }}>
+//           <PlusCircle
+//             size={Dimensions.get('window').width * 0.05}
+//             color="#071D4D"
+//           />
+//         </Pressable>
+//       </View>
+//     </View>
+//   );
+// };
