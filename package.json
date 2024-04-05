@@ -2,7 +2,7 @@
   "name": "react-native-unicorn",
   "version": "0.1.0",
   "description": "A customizable UI component library for react native and expo",
-   "main": "index.tsx",
+  "main": "index.tsx",
   "module": "index.tsx",
   "types": "index.tsx",
   "react-native": "",
@@ -19,10 +19,7 @@
     "ios",
     "android"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/121Unicorns/react-native-unicorn.git"
-  },
+  "repository": "https://github.com/121Unicorns/react-native-unicorn",
   "author": "121Unicorns (http://www.github.com/121unicorns)",
   "bugs": {
     "url": "https://github.com/121Unicorns/react-native-unicorn/issues"
