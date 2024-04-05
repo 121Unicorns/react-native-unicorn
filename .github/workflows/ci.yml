@@ -1,21 +1,33 @@
 name: CI
 on:
   push:
-    branches:
-      - main
+    branches: [main]
   pull_request:
-    branches:
-      - main
+    branches: [main]
+
+permissions:
+  contents: write
+  packages: write
+  pull-requests: write
+  issues: write
 
 jobs:
-  build-library:
+  build_release:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 1
 
-      - name: Setup
-        uses: ./.github/actions/setup
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 18
 
-      - name: Build package
-        run: yarn prepare
+      - name: Install dependencies
+        run: npm install
+
+      - name: Semantic Release
+        run: npm run semantic-release
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
