@@ -19,7 +19,10 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/121Unicorns/react-native-unicorn",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/121Unicorns/react-native-unicorn.git"
+  },
   "author": "121Unicorns (http://www.github.com/121unicorns)",
   "bugs": {
     "url": "https://github.com/121Unicorns/react-native-unicorn/issues"
@@ -112,5 +115,9 @@
     "lucide-react-native": "^0.289.0",
     "react-native-svg": "13.9.0",
     "twrnc": "^3.6.4"
-  }
+  },
+  "directories": {
+    "example": "example"
+  },
+  "license": "ISC"
 }
