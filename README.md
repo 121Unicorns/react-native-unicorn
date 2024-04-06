@@ -206,7 +206,7 @@ import Card from 'react-native-unicorn/card'
 
   <Card viewStyle={'p-2 m-4 justify-center flex-1'}>
     <View style={{ height: 50, justifyContent: 'center' }}>
-      <Text style={{ fontFamily: 'OutfitBold' }}>This is a card.</Text>
+      <Text>This is a card.</Text>
     </View>
   </Card>  
 ```
@@ -281,14 +281,12 @@ import Checkbox from 'react-native-unicorn/checkbox';
     onSelect={() => {}}
     color="blue-500"
     isChecked={true}
-    textStyle={{ fontFamily: 'Outfit' }}
   />
   <Checkbox
     label={'Default Unchecked'}
     onSelect={() => {}}
     color="red-500"
     isChecked={false}
-    textStyle={{ fontFamily: 'Outfit' }}
   />
 </View>
 ```
@@ -389,7 +387,6 @@ import Countdown from 'react-native-unicorn/countdown';
     onTimeUp={() => {
       Alert.alert("Time's up!");
     }}
-    textStyle={{ fontFamily: 'OutfitBold' }}
   />
 </View>
 ```
@@ -637,7 +634,6 @@ import { PasswordInput } from './password-input';
 
   <PasswordInput
     onChangePassword={(text: string) => console.log(text)}
-    textStyle={{ fontFamily: 'Outfit' }}
   />
 ```
 
@@ -673,12 +669,11 @@ import { PhoneNumberInput } from './phone-input';
 
   <PhoneNumberInput
     onPhoneNumberChange={(text: string) => console.log(text)}
-    textStyle={{ fontFamily: 'Outfit' }}
   />
 
   <PhoneNumberInput
      onPhoneNumberChange={(text: string) => console.log(text)}
-     textStyle={{ fontFamily: 'Outfit' }}
+
      viewStyle="my-4"
      codes={['KE', 'UG', 'TZ']}
   />
@@ -723,7 +718,6 @@ import { RadioButton } from './radio-button';
               }}
     type={''}
     orientation={'row'}
-    textStyle={{ fontFamily: 'Outfit' }}
   />
 ```
 
