@@ -37,7 +37,11 @@ npm i react-native-unicorn
 
 ## Components
 
-## Accordion
+<details>
+<summary>
+  <h3>Accordion</h3>
+</summary>
+<br>
 
 The ```Accordion``` component is a versatile, customizable accordion-style list component for React Native applications. It allows you to display a list of items with expandable content sections.
 
@@ -81,10 +85,11 @@ import Accordion from 'react-native-unicorn/accordion'
 <img alt="accordion" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
 <img alt="paged-accordion" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
 </div>
+</details>
 
-<br>
-
-## Avatar
+<details>
+  <summary>
+<h3>Avatar</h3></summary>
 
 The ```Avatar``` component is a customizable image component for React Native applications. It allows you to display user avatars or other images in different shapes and sizes.
 
@@ -115,10 +120,12 @@ import Avatar from 'react-native-unicorn/avatar'
 <img alt="circle-avatar" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
 <img alt="drop-avatar" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
 </div>
+</details>
 
-<br>
-
-## Bar Graph
+<details>
+<summary>
+  <h3>Bar Graph</h3>
+</summary>
 
 The ```BarGraph``` component is a customizable bar graph component for React Native applications. It allows you to display a bar graph with different statuses based on the percentage provided.
 
@@ -145,10 +152,10 @@ import BarGraph from 'react-native-unicorn/bar-graph'
 <div>
 <img alt="bar graph" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
 </div>
+</details>
 
-<br>
-
-## Bouncing Dots
+<details>
+<summary><h3>Bouncing Dots</h3></summary>
 
 The ```BouncingDots``` component is a customizable loading animation component that displays a series of dots that bounce in a sequence, creating a smooth loading animation.
 
@@ -174,10 +181,10 @@ import BouncingDots from 'react-native-unicorn/dots'
 <div>
 <img alt="dots" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
 </div>
+</details>
 
-<br>
-
-## Card
+<details>
+<summary><h3>Card</h3></summary>
 
 The ```Card``` component is a customizable card component that allows you to display content within a styled card layout.
 
@@ -205,10 +212,10 @@ import Card from 'react-native-unicorn/card'
 <div>
 <img alt="card" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
 </div>
+</details>
 
-<br>
-
-## Carousel
+<details>
+<summary><h3>Carousel</h3></summary>
 
 The ```Carousel``` component is a customizable carousel component that allows you to display a list of items in a horizontally scrollable carousel layout.
 
@@ -235,10 +242,10 @@ import Carousel from 'react-native-unicorn/dots'
 <div>
 <img alt="carousel" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
 </div>
+</details>
 
-<br>
-
-## Checkbox
+<details>
+<summary><h3>Checkbox</h3></summary>
 
 The `Checkbox` component is a customizable checkbox component that allows you to display a list of items in a horizontally scrollable checkbox layout.
 
@@ -288,10 +295,10 @@ import Checkbox from 'react-native-unicorn/checkbox';
 <div>
 <img alt="checkbox" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
 </div>
+</details>
 
-<br>
-
-## CircularGraph
+<details>
+<summary><h3>CircularGraph</h3></summary>
 
 The `CircularGraph` component is a customizable circularGraph component that allows you to display a list of items in a horizontally scrollable circularGraph layout.
 
@@ -346,10 +353,10 @@ import CircularGraph from 'react-native-unicorn/circular-graph';
 <div>
 <img alt="circular-graph" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
 </div>
+</details>
 
-<br>
-
-## Countdown
+<details>
+<summary><h3>Countdown</h3></summary>
 
 The `Countdown` component is a customizable countdown component that allows you to display a countdown timer that triggers a callback function when the time is up.
 
@@ -389,10 +396,10 @@ import Countdown from 'react-native-unicorn/countdown';
 <div>
 <img alt="countdown" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
 </div>
+</details>
 
-<br>
-
-## CounterBox
+<details>
+<summary><h3>CounterBox</h3></summary>
 
 The `CounterBox` component is a customizable CounterBox component that allows you to display a counter with increment and decrement buttons.
 
@@ -434,10 +441,10 @@ import CounterBox from 'react-native-unicorn/counterBox';
 <div>
 <img alt="counter-box" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
 </div>
+</details>
 
-<br>
-
-## CustomInput
+<details>
+<summary><h3>CustomInput</h3></summary>
 
 The `CustomInput` component is a customizable TextInput component that allows you to display a text input field with optional icon, placeholder, and custom styles.
 
@@ -492,10 +499,10 @@ import CustomInput from 'react-native-unicorn/custom-input';
 <div>
 <img alt="custom-input" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
 </div>
+</details>
 
-<br>
-
-## DropDown
+<details>
+<summary><h3>DropDown</h3></summary>
 
 The `DropDown` component is a customizable dropdown component that displays a dropdown list with selectable options, each of which can have an optional icon.
 
@@ -540,10 +547,10 @@ import DropDown from 'react-native-unicorn/dropdown';
 <div>
 <img alt="dropdown" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
 </div>
+</details>
 
-<br>
-
-## Grid
+<details>
+<summary><h3>Grid</h3></summary>
 
 The `Grid` component is a customizable grid component that displays a table-like structure with rows and columns.
 
@@ -576,10 +583,10 @@ import { Grid } from 'react-native-unicorn/grid';
 <div>
 <img alt="grid" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
 </div>
+</details>
 
-<br>
-
-## OTPInput
+<details>
+<summary><h3>OTPInput</h3></summary>
 
 The `OTPInput` component is a customizable One-Time Password (OTP) input component that displays a series of input fields for OTP entry. Long pressing on the first cell allows users to paste the OTP in all the cells.
 
@@ -613,10 +620,10 @@ import { OTPInput } from './otp-input';
 <div>
 <img alt="otp-input" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
 </div>
+</details>
 
-<br>
-
-## PasswordInput
+<details>
+<summary><h3>PasswordInput</h3></summary>
 
 The `PasswordInput` component is a customizable password input component for React Native applications. It allows you to display a password input field with an integrated show/hide password toggle.
 
@@ -655,10 +662,10 @@ value) => console.log(`Password value is ${value}`)}
 <div>
 <img alt="password-input" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
 </div>
+</details>
 
-<br>
-
-## PhoneNumberInput
+<details>
+<summary><h3>PhoneNumberInput</h3></summary>
 
 The `PhoneNumberInput` component is a customizable phone number component that allows you to display a phone number input field with an integrated country code picker.
 
@@ -697,10 +704,10 @@ import { PhoneNumberInput } from './phone-input';
 <div>
 <img alt="phone-input" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
 </div>
+</details>
 
-<br>
-
-## RadioButton
+<details>
+<summary><h3>RadioButton</h3></summary>
 
 The `RadioButton` component is a customizable radio button that allows you to display a group of radio buttons with selectable options.
 
@@ -741,10 +748,10 @@ import { RadioButton } from './radio-button';
 <div>
 <img alt="radio-button" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
 </div>
+</details>
 
-<br>
-
-## VerticalStepper
+<details>
+<summary><h3>VerticalStepper</h3></summary>
 
 The `VerticalStepper` component is a customizable vertical stepper component for React Native applications. It allows you to display a series of steps in a vertical layout.
 
@@ -777,3 +784,4 @@ In this example, the `VerticalStepper` component is used to display a vertical s
 <div>
 <img alt="vertical-stepper" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
 </div>
+</details>
