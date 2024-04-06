@@ -142,8 +142,8 @@ import BarGraph from 'react-native-unicorn/bar-graph'
 
   <BarGraph
     percentage={75}
-    barColor="green"
-    inactiveColor="gray"
+    barColor="[#E4959E]"
+    inactiveColor="neutral-100"
   />
 ```
 <br>
@@ -173,7 +173,12 @@ The component accepts the following props:
 ```javascript
 import BouncingDots from 'react-native-unicorn/dots'
 
-  <BouncingDots size={30} bounceHeight={50} />
+  <BouncingDots
+    dots={5}
+    colors={['red', 'green', 'blue', 'yellow', 'purple']}
+    size={15}
+    bounceHeight={15}
+  />
 ```
 <br>
 <div>
@@ -199,12 +204,11 @@ The component accepts the following props:
 ```javascript
 import Card from 'react-native-unicorn/card'
 
-  <Card
-    dots={5}
-    colors={['red', 'green', 'blue', 'yellow', 'purple']}
-    size={15}
-    bounceHeight={15}    
-  />    
+  <Card viewStyle={'p-2 m-4 justify-center flex-1'}>
+    <View style={{ height: 50, justifyContent: 'center' }}>
+      <Text style={{ fontFamily: 'OutfitBold' }}>This is a card.</Text>
+    </View>
+  </Card>  
 ```
 <br>
 <div>
@@ -429,7 +433,7 @@ import CounterBox from 'react-native-unicorn/counterBox';
     onTextChanged={(value) => console.log(`Counter value is ${value}`)}
     counterValue={10}
     title="Quantity"
-    textStyle={{ color: 'blue', fontSize: 20 }}
+    textStyle={{ fontSize: 20 }}
     viewStyle="bg-red-500"
     />
 </View>
@@ -466,7 +470,7 @@ The component accepts the following props:
 #### Example
 
 ```javascript
-import CustomInput from 'react-native-unicorn/custom-input';
+import Input from 'react-native-unicorn/custom-input';
 
 <View
   style={{
@@ -477,19 +481,13 @@ import CustomInput from 'react-native-unicorn/custom-input';
     alignSelf: 'center',
   }}
 >
-  <CustomInput
-    onTextChange={(text) => console.log(`Input text is ${text}`)}
+  <Input
     variant="medium"
-    placeholder="Enter text"
-    placeholderTextColor="gray"
-    viewStyle="bg-white"
-    textStyle={{ color: 'black', fontSize: 16 }}
-    icon={<Icon name="search" />}
-    disabled={false}
-    caps={false}
-    length={100}
-    inputMode="text"
-   />
+    placeholder="Medium Input"
+    onTextChange={(text: string) => {
+      console.log(text);
+    }}
+  />
 </View>
 ```
 
@@ -535,8 +533,6 @@ import DropDown from 'react-native-unicorn/dropdown';
     ]}
     onSelect={(value) => console.log(`Selected value is ${value}`)}
     title="Select an option"
-    viewStyle="bg-blue-500"
-    textStyle={{ color: 'white', fontSize: 16 }}
     />
 </View>
 ```
@@ -573,7 +569,6 @@ import { Grid } from 'react-native-unicorn/grid';
   ]}
   columns={['ID', 'Name', 'Age']}
   keys={['id', 'name', 'age']}
-  textStyle={{ color: 'black', fontSize: 16 }}
 />
 ```
 
@@ -606,11 +601,9 @@ import { OTPInput } from './otp-input';
 
 <OTPInput
   length={6}
-  value="123456"
   onOtpChange={(value) => console.log(`OTP value is ${value}`)}
   incorrect={false}
   textStyle={{ color: 'black', fontSize: 16 }}
-  viewStyle="bg-blue-500"
 />
 ```
 
@@ -642,18 +635,10 @@ The component accepts the following props:
 ```javascript
 import { PasswordInput } from './password-input';
 
-<PasswordInput
-  onChangePassword
-
-={(
-
-value) => console.log(`Password value is ${value}`)}
-  placeholder="Enter your password"
-  placeholderTextColor="#999999"
-  textStyle={{ color: 'black', fontSize: 16 }}
-  viewStyle="bg-blue-500"
-  disabled={false}
-/>
+  <PasswordInput
+    onChangePassword={(text: string) => console.log(text)}
+    textStyle={{ fontFamily: 'Outfit' }}
+  />
 ```
 
 <br>
@@ -686,16 +671,17 @@ The component accepts the following props:
 ```javascript
 import { PhoneNumberInput } from './phone-input';
 
-<PhoneNumberInput
-  onPhoneNumberChange={(value) => console.log(`Phone number value is ${value}`)}
-  placeholder="Enter your phone number"
-  placeholderTextColor="#999999"
-  textStyle={{ color: 'black', fontSize: 16 }}
-  viewStyle="bg-blue-500"
-  codeStyle="bg-gray-200"
-  disabled={false}
-  codes={['KE', 'UG', 'TZ']}
-/>
+  <PhoneNumberInput
+    onPhoneNumberChange={(text: string) => console.log(text)}
+    textStyle={{ fontFamily: 'Outfit' }}
+  />
+
+  <PhoneNumberInput
+     onPhoneNumberChange={(text: string) => console.log(text)}
+     textStyle={{ fontFamily: 'Outfit' }}
+     viewStyle="my-4"
+     codes={['KE', 'UG', 'TZ']}
+  />
 ```
 
 <br>
@@ -727,19 +713,18 @@ The component accepts the following props:
 ```javascript
 import { RadioButton } from './radio-button';
 
-<RadioButton
-  data={[
-    { id: '1', label: 'Option 1' },
-    { id: '2', label: 'Option 2' },
-  ]}
-  type="circle"
-  onSelect={(value) => console.log(`Selected value is ${value}`)}
-  orientation="horizontal"
-  viewStyle="bg-blue-500"
-  textStyle={{ color: 'white', fontSize: 16 }}
-  width="50%"
-  defaultSelected={{ id: '1', label: 'Option 1' }}
-/>
+  <RadioButton
+    data={[
+      { id: '1', label: 'Option 1' },
+      { id: '2', label: 'Option 2' },
+    ]}
+    onSelect={(item: any) => {
+                console.log(item.name);
+              }}
+    type={''}
+    orientation={'row'}
+    textStyle={{ fontFamily: 'Outfit' }}
+  />
 ```
 
 <br>
@@ -771,8 +756,7 @@ import { VerticalStepper } from './vertical-stepper';
     { title: 'Step 1', component: <Text>Step 1 Content</Text> },
     { title: 'Step 2', component: <Text>Step 2 Content</Text>, pointStyle: 'bg-red-500' },
   ]}
-  viewStyle="bg-blue-500"
-  textStyle={{ color: 'white', fontSize: 16 }}
+  viewStyle="bg-blue-500 my-5"
 />
 ```
 
