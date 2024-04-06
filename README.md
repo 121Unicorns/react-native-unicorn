@@ -14,24 +14,24 @@ npm i react-native-unicorn
 
 | Component | Description                |
 | :------------- | :------------------------- |
-| `Accordion` | A customizable accordion-style list component for React Native applications. It allows you to display a list of items with expandable content sections. |
-| `Avatar` | A customizable image component for displaying user avatars or other images in different shapes and sizes. |
-| `Bar Graph` | A customizable bar graph component that allows you to display a bar graph. |
-| `Bouncing Dots` | A customizable loading animation component for that displays a series of dots bounce in a sequence |
-| `Card` | A customizable card component that allows you to display content within a styled card layout.|
-| `Carousel` | A customizable carousel component that allows you to display a list of items in a horizontally scrollable carousel layout.|
-| `Checkbox` | A customizable checkbox component |
-| `Circular Graph` | A a customizable circular graph component that allows you to display a circular progress graph with an optional percentage label in the center. |
-| `Countdown Timer` | A component for |
-| `Counter Box` | A component for |
-| `Custom Input` | A component for |
-| `Dropdown` | A component for |
-| `Grid` | A component for |
-| `OTP Input` | A component for |
-| `Password Input` | A component for |
-| `Phone Input` | A component for |
-| `Radio Button` | A component for |
-| `Vertical Stepper` | A component for |
+| [Accordion]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#accordion")| A customizable accordion-style list component for React Native applications. It allows you to display a list of items with expandable content sections. |
+|[Avatar]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#avatar")| A customizable image component for displaying user avatars or other images in different shapes and sizes. |
+|[Bar Graph]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#bar-graph")| A customizable bar graph component that allows you to display a bar graph. |
+|[Bouncing Dots]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#bouncing-dots")| A customizable loading animation component for that displays a series of dots bounce in a sequence |
+|[Card]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#card")| A customizable card component that allows you to display content within a styled card layout.|
+|[Carousel]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#carousel")| A customizable carousel component that allows you to display a list of items in a horizontally scrollable carousel layout.|
+|[Checkbox]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#checkbox")| A customizable checkbox component |
+|[Circular Graph]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#circular-graph")| A a customizable circular graph component that allows you to display a circular progress graph with an optional percentage label in the center. |
+|[Countdown Timer]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#countdown-timer")| A is a customizable countdown component that  allows you to display a countdown timer that triggers a callback function when the time is up. |
+|[Counter Box]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#counter-box")| A customizable counter component that allows you to display a counter with increment and decrement buttons.|
+|[Custom Input]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#custom-input")| A component for |
+|[DropDown]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#dropdown")| A component for |
+|[Grid]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#grid")| A component for |
+|[OTP Input]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#otp-input")| A component for |
+|[Password Input]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#password-input")| A component for |
+|[Phone Input]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#phone-input")| A component for |
+|[Radio Button]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#radio-button")| A component for |
+|[Vertical Stepper]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#vertical-stepper")| A component for |
 
 
 ## Components
@@ -228,6 +228,7 @@ import Carousel from 'react-native-unicorn/dots'
 <img alt="carousel" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
 </div>
 
+
 ## Checkbox
 
 The `Checkbox` component is a customizable checkbox component that allows you to display a list of items in a horizontally scrollable checkbox layout.
@@ -333,4 +334,190 @@ import CircularGraph from 'react-native-unicorn/circular-graph';
 <br>
 <div>
 <img alt="circular-graph" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
+</div>
+
+## Countdown
+
+The `Countdown` component is a customizable countdown component that  allows you to display a countdown timer that triggers a callback function when the time is up.
+
+The component accepts the following props:
+
+| Props | Description                |
+| :-------- | :------------------------- |
+|seconds|The initial number of seconds for the countdown.|
+|onTimeUp|A function that is called when the countdown reaches zero.|
+|textStyle|An optional TextStyle object for customizing the style of the countdown text.|
+
+#### Example
+
+```javascript
+import Countdown from 'react-native-unicorn/countdown';
+
+<View
+  style={{
+    width: Dimensions.get('window').width,
+    padding: 5,
+    justifyContent: 'center',
+    alignItems: 'center',
+    alignSelf: 'center',
+  }}
+>
+  <Countdown
+    seconds={120}
+    onTimeUp={() => {
+      Alert.alert("Time's up!");
+    }}
+    textStyle={{ fontFamily: 'OutfitBold' }}
+  />
+</View>
+```
+
+<br>
+<div>
+<img alt="countdown" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
+</div>
+
+## CounterBox
+
+The `CounterBox` component is a customizable CounterBox component that allows you to display a counter with increment and decrement buttons.
+
+The component accepts the following props:
+
+| Props | Description                |
+| :-------- | :------------------------- |
+|onTextChanged|A function that is called when the counter value changes. The function receives the new counter value as a string.|
+|counterValue|An optional number representing the initial value of the counter. Default is 1.|
+|title|An optional string representing the title to be displayed above the counter.|
+|textStyle|An optional TextStyle object for customizing the style of the counter text.|
+|viewStyle|An optional string representing additional Tailwind CSS classes to be applied to the counter.|
+
+#### Example
+
+```javascript
+import CounterBox from 'react-native-unicorn/counterBox';
+
+<View
+  style={{
+    width: Dimensions.get('window').width,
+    padding: 5,
+    justifyContent: 'center',
+    alignItems: 'center',
+    alignSelf: 'center',
+  }}
+>
+  <CounterBox
+    onTextChanged={(value) => console.log(`Counter value is ${value}`)}
+    counterValue={10}
+    title="Quantity"
+    textStyle={{ color: 'blue', fontSize: 20 }}
+    viewStyle="bg-red-500"
+    />
+</View>
+```
+
+<br>
+<div>
+<img alt="counter-box" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
+</div>
+
+## CustomInput
+
+The `CustomInput` component is a customizable CustomInput component that allows you to display a text input field with optional icon, placeholder, and custom styles.
+
+The component accepts the following props:
+
+| Props | Description                |
+| :-------- | :------------------------- |
+|onTextChange|A function that is called when the text in the input field changes. The function receives the new text as a string.|
+|variant|A string representing the variant of the input field. This determines the height and multiline property of the input field. The accepted values are 'small', 'medium', and 'large'.|
+|placeholder|A string representing the placeholder text to be displayed in the input field.|
+|placeholderTextColor|An optional string representing the color of the placeholder text.|
+|viewStyle|An optional string representing additional Tailwind CSS classes to be applied to the input field.|
+|textStyle|An optional TextStyle object for customizing the style of the text in the input field.|
+|icon|An optional React Node to be displayed next to the input field.|
+|disabled|An optional boolean indicating whether the input field is disabled.|
+|caps|An optional boolean indicating whether the text in the input field should be auto-capitalized.|
+|length|An optional number representing the maximum length of the text in the input field.|
+|inputMode|An optional string representing the input mode of the input field.|
+|props|Any additional props to be passed to the underlying TextInput component.|
+
+#### Example
+
+```javascript
+import CustomInput from 'react-native-unicorn/custom-input';
+
+<View
+  style={{
+    width: Dimensions.get('window').width,
+    padding: 5,
+    justifyContent: 'center',
+    alignItems: 'center',
+    alignSelf: 'center',
+  }}
+>
+  <CustomInput
+    onTextChange={(text) => console.log(`Input text is ${text}`)}
+    variant="medium"
+    placeholder="Enter text"
+    placeholderTextColor="gray"
+    viewStyle="bg-white"
+    textStyle={{ color: 'black', fontSize: 16 }}
+    icon={<Icon name="search" />}
+    disabled={false}
+    caps={false}
+    length={100}
+    inputMode="text"
+   />
+</View>
+```
+
+<br>
+<div>
+<img alt="custom-input" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
+</div>
+
+## DropDown
+
+The `DropDown` component is a customizable dropdown component that displays a dropdown list with selectable options, each of which can have an optional icon.
+
+The component accepts the following props:
+
+| Props | Description                |
+| :-------- | :------------------------- |
+|options|An array of objects representing the options to be displayed in the dropdown. Each object should have an id, label, and value property, and an optional icon property.|
+|onSelect|A function that is called when an option is selected. The function receives the value of the selected option.|
+|title|A string representing the title to be displayed on the dropdown button.|
+|viewStyle|An optional string representing additional Tailwind CSS classes to be applied to the dropdown button.|
+|textStyle|An optional TextStyle object for customizing the style of the text in the dropdown button and options.|
+
+#### Example
+
+```javascript
+import DropDown from 'react-native-unicorn/dropdown';
+
+<View
+  style={{
+    width: Dimensions.get('window').width,
+    padding: 5,
+    justifyContent: 'center',
+    alignItems: 'center',
+    alignSelf: 'center',
+  }}
+>
+  <DropDown
+    options={[
+        { id: '1', label: 'Option 1', value: '1', icon: <Icon name="home" /> },
+        { id: '2', label: 'Option 2', value: '2' },
+    ]}
+    onSelect={(value) => console.log(`Selected value is ${value}`)}
+    title="Select an option"
+    viewStyle="bg-blue-500"
+    textStyle={{ color: 'white', fontSize: 16 }}
+    />
+</View>
+```
+
+<br>
+<div>
+<img alt="dropdown" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
 </div>
