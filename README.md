@@ -21,7 +21,7 @@ npm i react-native-unicorn
 | `Card` | A customizable card component that allows you to display content within a styled card layout.|
 | `Carousel` | A customizable carousel component that allows you to display a list of items in a horizontally scrollable carousel layout.|
 | `Checkbox` | A customizable checkbox component |
-| `Circular Graph` | A component for |
+| `Circular Graph` | A a customizable circular graph component that allows you to display a circular progress graph with an optional percentage label in the center. |
 | `Countdown Timer` | A component for |
 | `Counter Box` | A component for |
 | `Custom Input` | A component for |
@@ -32,10 +32,6 @@ npm i react-native-unicorn
 | `Phone Input` | A component for |
 | `Radio Button` | A component for |
 | `Vertical Stepper` | A component for |
-
-
-## Components
-
 
 
 ## Components
@@ -230,4 +226,111 @@ import Carousel from 'react-native-unicorn/dots'
 <br>
 <div>
 <img alt="carousel" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
+</div>
+
+## Checkbox
+
+The `Checkbox` component is a customizable checkbox component that allows you to display a list of items in a horizontally scrollable checkbox layout.
+
+The component accepts the following props:
+
+| Props | Description                |
+| :-------- | :------------------------- |
+|label| The label to be displayed next to the checkbox.|
+|onSelect| A function that is called when the checkbox is selected or deselected. The function receives a boolean argument indicating whether the checkbox is checked.|
+|isChecked| An optional boolean indicating whether the checkbox is initially checked. Default is false.|
+|color| An optional string representing the color of the checkbox when it is checked. If not provided, the default color is used.|
+|width| An optional string representing the width of the checkbox. If not provided, the default width is '100%'.|
+|textStyle| An optional TextStyle object for customizing the style of the label.|
+
+#### Example
+
+```javascript
+import Checkbox from 'react-native-unicorn/checkbox';
+
+<View
+  style={{
+    width: Dimensions.get('window').width,
+    padding: 5,
+    justifyContent: 'center',
+    alignItems: 'center',
+    alignSelf: 'center',
+  }}
+>
+  <Checkbox
+    label={'Default Checked'}
+    onSelect={() => {}}
+    color="blue-500"
+    isChecked={true}
+    textStyle={{ fontFamily: 'Outfit' }}
+  />
+  <Checkbox
+    label={'Default Unchecked'}
+    onSelect={() => {}}
+    color="red-500"
+    isChecked={false}
+    textStyle={{ fontFamily: 'Outfit' }}
+  />
+</View>
+```
+
+<br>
+<div>
+<img alt="checkbox" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
+</div>
+
+## CircularGraph
+
+The `CircularGraph` component is a customizable circularGraph component that allows you to display a list of items in a horizontally scrollable circularGraph layout.
+
+The component accepts the following props:
+
+| Props | Description                |
+| :-------- | :------------------------- |
+|percentage| A number representing the percentage to be displayed by the circular graph. This value should be between 0 and 100.|
+|radius| The radius of the circular graph in pixels.
+|strokeWidth| The width of the stroke used to draw the circular graph in pixels.|
+|strokeColor| An optional string representing the color of the progress stroke. If not provided, the default color is used.|
+|displayText| An optional boolean indicating whether to display the percentage text in the center of the graph. Default is false.|
+
+#### Example
+
+```javascript
+import CircularGraph from 'react-native-unicorn/circular-graph';
+
+<View
+  style={{
+    width: Dimensions.get('window').width,
+    padding: 5,
+    justifyContent: 'center',
+    alignItems: 'center',
+    alignSelf: 'center',
+  }}
+>
+  <CircularGraph
+    percentage={25}
+    radius={35}
+    strokeWidth={12}
+    strokeColor="#048BA8"
+    displayText={true}
+  />
+  <CircularGraph
+    strokeColor="#F18F01"
+    percentage={35}
+    radius={35}
+    strokeWidth={12}
+    displayText={true}
+  />
+  <CircularGraph
+    percentage={75}
+    radius={35}
+    strokeWidth={12}
+    displayText={true}
+  />
+</View>
+```
+
+<br>
+<div>
+<img alt="circular-graph" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
 </div>
