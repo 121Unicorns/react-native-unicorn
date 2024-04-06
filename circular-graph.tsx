@@ -8,12 +8,16 @@ interface CircularGraphProps {
   percentage: number; // A value between 0 and 100
   radius: number;
   strokeWidth: number;
+  strokeColor?: string;
+  displayText?: boolean;
 }
 
 export function CircularGraph({
   percentage,
   radius,
   strokeWidth,
+  strokeColor,
+  displayText,
 }: CircularGraphProps) {
   const cx = radius;
   const cy = radius;
@@ -22,7 +26,7 @@ export function CircularGraph({
   const progress = (percentage / 100) * circumference;
 
   return (
-    <View style={tw `items-center`}>
+    <View style={tw`items-center`}>
       <Svg width={radius * 2} height={radius * 2}>
         <G>
           <Circle
@@ -37,16 +41,25 @@ export function CircularGraph({
             cx={cx}
             cy={cy}
             r={r}
-            stroke={primary} // Progress color
+            stroke={strokeColor ?? primary} // Progress color
             strokeWidth={strokeWidth}
             strokeDasharray={`${progress},${circumference}`}
             strokeLinecap="round"
             fill="none"
             transform={`rotate(-90, ${radius}, ${radius})`}
           />
-          <SvgText x={cx} y={cy} textAnchor="middle" alignmentBaseline="middle" fill={neutral200} fontWeight={900}>
-            {`${percentage}%`}
-          </SvgText>
+          {displayText ? (
+            <SvgText
+              x={cx}
+              y={cy}
+              textAnchor="middle"
+              alignmentBaseline="middle"
+              fill={neutral200}
+              fontWeight={900}
+            >
+              {`${percentage}%`}
+            </SvgText>
+          ) : null}
         </G>
       </Svg>
     </View>

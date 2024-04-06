@@ -1,5 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { View, TextInput, type TextStyle, type TextInputProps } from 'react-native';
+import {
+  View,
+  TextInput,
+  type TextStyle,
+  type TextInputProps,
+} from 'react-native';
 import tw from './tailwind';
 import { neutral700 } from './colors';
 
@@ -18,7 +23,7 @@ interface CustomInputProps extends TextInputProps {
   props?: TextInputProps;
 }
 
-export function CustomInput({
+export function Input({
   onTextChange,
   variant,
   placeholder,
@@ -30,7 +35,7 @@ export function CustomInput({
   caps,
   length,
   inputMode,
-  props
+  props,
 }: CustomInputProps) {
   const [height, setHeight] = useState(0);
   const [isMultiline, setIsMultiline] = useState(false);
@@ -49,7 +54,11 @@ export function CustomInput({
   }, [variant]);
 
   return (
-    <View style={tw`flex-row border border-neutral rounded-lg p-2 ${viewStyle ? viewStyle : " "}`}>
+    <View
+      style={tw`flex-row border border-neutral rounded-lg p-2 ${
+        viewStyle ? viewStyle : ' '
+      }`}
+    >
       <TextInput
         style={[tw`flex-1 font-body min-h-${height}`, textStyle]}
         placeholder={placeholder}

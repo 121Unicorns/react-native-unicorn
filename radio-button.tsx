@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
-import { Pressable, Text, View, type TextStyle } from "react-native";
-import tw from "./tailwind";
+import React, { useEffect, useState } from 'react';
+import { Pressable, Text, View, type TextStyle } from 'react-native';
+import tw from './tailwind';
 
 interface CustomRadioButtonProps {
   data: any[];
@@ -13,7 +13,7 @@ interface CustomRadioButtonProps {
   defaultSelected?: any;
 }
 
-export function CustomRadioButton({
+export function RadioButton({
   data,
   type,
   onSelect,
@@ -21,7 +21,6 @@ export function CustomRadioButton({
   viewStyle,
   textStyle,
   defaultSelected,
-
 }: CustomRadioButtonProps) {
   const [userOption, setUserOption] = useState(null);
 
@@ -38,7 +37,9 @@ export function CustomRadioButton({
   const unselectedButton = () => {
     return (
       <View
-        style={tw `h-5 w-5 rounded-full border border-primary bg-white items-center justify-center ${viewStyle as string}`}
+        style={tw`h-5 w-5 rounded-full border border-primary bg-white items-center justify-center ${
+          viewStyle as string
+        }`}
       />
     );
   };
@@ -46,10 +47,14 @@ export function CustomRadioButton({
   const selectedButton = () => {
     return (
       <View
-        style={tw `h-5 w-5 rounded-full border border-primary bg-white items-center justify-center p-2 ${viewStyle as string}`}
+        style={tw`h-5 w-5 rounded-full border border-primary bg-white items-center justify-center p-2 ${
+          viewStyle as string
+        }`}
       >
         <View
-          style={tw `h-3 w-3 rounded-full bg-primary items-center justify-center ${viewStyle as string}`}
+          style={tw`h-3 w-3 rounded-full bg-primary items-center justify-center ${
+            viewStyle as string
+          }`}
         />
       </View>
     );
@@ -57,30 +62,28 @@ export function CustomRadioButton({
 
   return (
     <View
-      style={tw `my-1 flex-${orientation === "horizontal" ? "row" : "col"} justify-between`}
+      style={tw`my-1 flex-${
+        orientation === 'horizontal' ? 'row' : 'col'
+      } justify-between`}
     >
       {data.map((item) => {
         return (
           <Pressable
-            style={tw `w-full`}
+            style={tw`w-full`}
             onPress={() => {
               onSelect(item);
               setUserOption(item);
             }}
             key={item.id}
           >
-            <View
-              style={tw `flex-row items-center p-1 bg-transparent`}
-            >
+            <View style={tw`flex-row items-center p-1 bg-transparent`}>
               {item === userOption ? selectedButton() : unselectedButton()}
-              <Text
-                style={[tw `ml-3 text-base font-body`, textStyle]}
-              >
-                {type === "discount"
+              <Text style={[tw`ml-3 text-base font-body`, textStyle]}>
+                {type === 'discount'
                   ? item.product.product_name
-                  : type === "profile"
+                  : type === 'profile'
                   ? item.business_name +
-                    " - " +
+                    ' - ' +
                     item.businessGeoLocation.address
                   : item.name}
               </Text>

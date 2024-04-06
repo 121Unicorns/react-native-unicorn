@@ -1,48 +1,51 @@
-import React, { useEffect, useState } from 'react';
-import { View, Text, type TextStyle } from 'react-native';
+import React from 'react';
+import { View } from 'react-native';
 import tw from './tailwind';
 
 interface BarGraphProps {
   percentage: number;
-  textStyle?: TextStyle;
+  barColor?: string;
+  inactiveColor?: string;
 }
 
-export function BarGraph({ percentage, textStyle }: BarGraphProps) {
-  const [status, setStatus] = useState('');
-
-  useEffect(() => {
-    if (percentage >= 75){
-        setStatus('Platinum')
-    } else if (percentage >= 50){
-        setStatus('Gold')
-    } else if (percentage >= 25){
-        setStatus('Silver')
-    } else if (percentage >= 0){
-        setStatus('Bronze')
-    }
-  }, []);
-
+export function BarGraph({
+  percentage,
+  barColor,
+  inactiveColor,
+}: BarGraphProps) {
   const signalBars: { color: string; height: string }[] = [
     {
-      color: percentage >= 0 ? 'primary' : 'neutral-200',
+      color:
+        percentage >= 0
+          ? barColor ?? 'primary'
+          : inactiveColor ?? 'neutral-200',
       height: '2/6',
     },
     {
-      color: percentage >= 26 ? 'primary' : 'neutral-200',
+      color:
+        percentage >= 26
+          ? barColor ?? 'primary'
+          : inactiveColor ?? 'neutral-200',
       height: '3/5',
     },
     {
-      color: percentage >= 51 ? 'primary' : 'neutral-200',
+      color:
+        percentage >= 51
+          ? barColor ?? 'primary'
+          : inactiveColor ?? 'neutral-200',
       height: '4/5',
     },
     {
-      color: percentage >= 76 ? 'primary' : 'neutral-200',
+      color:
+        percentage >= 76
+          ? barColor ?? 'primary'
+          : inactiveColor ?? 'neutral-200',
       height: 'full',
     },
   ];
 
   return (
-    <View style={tw `flex-1`}>
+    <View style={tw`flex-1`}>
       <View style={tw`flex-row flex-1 items-end`}>
         {signalBars.map((bar, index) => (
           <View
@@ -51,7 +54,6 @@ export function BarGraph({ percentage, textStyle }: BarGraphProps) {
           />
         ))}
       </View>
-      <Text style={[tw`text-xs mt-2 text-center font-body`, textStyle]}>{status}</Text>
     </View>
   );
 }

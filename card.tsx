@@ -1,35 +1,23 @@
-import React, { useState, type ReactNode, useEffect } from 'react';
-import { View } from 'react-native';
+import React, { type ReactNode } from 'react';
+import { TouchableOpacity, type TouchableOpacityProps } from 'react-native';
 import tw from './tailwind';
 
 interface CardProps {
   children: ReactNode;
   viewStyle?: string;
-  variant: string;
+  props?: TouchableOpacityProps;
 }
 
-export function Card({ children, viewStyle, variant }: CardProps){
-  const [color, setColor] = useState<string>('neutral-100');
-  const [borderCol, setBorderCol] = useState<string>('neutral-100');
-
-  useEffect(() => {
-      if (variant === 'secondary') {
-        setColor('primary');
-        setBorderCol('primary');
-      } else if (variant === 'tertiary') {
-        setColor('secondary');
-        setBorderCol('secondary');
-      } else if (variant === 'quaternary') {
-        setColor('primary/50');
-        setBorderCol('primary/50');
-      } else {
-        setColor('neutral-100');
-        setBorderCol('neutral-100');
-      }
-  }, [variant]);
+export function Card({ children, viewStyle, props }: CardProps) {
   return (
-    <View style={tw `bg-${color} border border-${borderCol} shadow-xl shadow-black rounded-md ${viewStyle as string}`}>
-      {children}
-    </View>
+    <TouchableOpacity
+      activeOpacity={1}
+      {...props}
+      style={tw`bg-neutral-100 shadow-xl shadow-black rounded-md ${
+        viewStyle as string
+      }`}
+    >
+      {children ?? null}
+    </TouchableOpacity>
   );
-};
+}

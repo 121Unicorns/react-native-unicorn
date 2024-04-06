@@ -1,7 +1,7 @@
-import { Check } from "lucide-react-native";
-import React, { useState } from "react";
-import { Pressable, Text, View, type TextStyle } from "react-native";
-import tw from "./tailwind";
+import { Check } from 'lucide-react-native';
+import React, { useState } from 'react';
+import { Pressable, Text, View, type TextStyle } from 'react-native';
+import tw from './tailwind';
 
 interface CustomCheckboxProps {
   label: string;
@@ -12,24 +12,21 @@ interface CustomCheckboxProps {
   textStyle?: TextStyle;
 }
 
-export function CustomCheckbox({
+export function Checkbox({
   label,
   onSelect,
   isChecked,
-    //@ts-ignore
   color,
   width,
   textStyle,
 }: CustomCheckboxProps) {
-    //@ts-ignore
   const [checked, setChecked] = useState(isChecked || false);
-    //@ts-ignore
-  const [customWidth, setCustomWidth] = useState(width ? width : "100%");
+  const [customWidth, setCustomWidth] = useState(width ? width : '100%');
 
   const unselectedButton = () => {
     return (
       <View
-        style={tw `h-6 w-6 rounded-lg border border-neutral bg-white items-center justify-center`}
+        style={tw`h-6 w-6 rounded-lg border border-neutral bg-white items-center justify-center`}
       />
     );
   };
@@ -37,7 +34,9 @@ export function CustomCheckbox({
   const selectedButton = () => {
     return (
       <View
-        style={tw `h-6 w-6 rounded-lg bg-primary items-center justify-center`}
+        style={tw`h-6 w-6 rounded-lg bg-${
+          color ? color : 'primary'
+        } items-center justify-center`}
       >
         <Check color="white" size={20} />
       </View>
@@ -47,7 +46,7 @@ export function CustomCheckbox({
   return (
     <View
       //@ts-ignore
-      style={tw `my-1 w-${customWidth}`}
+      style={tw`my-1 w-${customWidth}`}
     >
       <Pressable
         onPress={() => {
@@ -55,14 +54,9 @@ export function CustomCheckbox({
           setChecked(!checked);
         }}
       >
-        <View
-          style={tw `flex-row items-center p-1 bg-transparent`}
-        >
+        <View style={tw`flex-row items-center p-1 bg-transparent`}>
           {checked ? selectedButton() : unselectedButton()}
-          <Text
-            style={[tw `ml-3 text-base font-body`, textStyle]}>
-            {label}
-          </Text>
+          <Text style={[tw`ml-3 text-base font-body`, textStyle]}>{label}</Text>
         </View>
       </Pressable>
     </View>

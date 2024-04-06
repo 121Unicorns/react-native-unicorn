@@ -39,7 +39,7 @@ export function DropDown({
   return (
     <View>
       <TouchableOpacity
-        style={tw`flex-row flex-1 justify-between border border-neutral rounded-lg h-10 p-2 items-center ${
+        style={tw`flex-row flex-1 justify-between border border-neutral rounded-lg min-h-12 p-2 items-center ${
           viewStyle as string
         }`}
         onPress={() => setIsVisible(true)}
