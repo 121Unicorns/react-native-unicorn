@@ -82,8 +82,8 @@ import Accordion from 'react-native-unicorn/accordion'
 ```
 <br>
 <div style={flex-direction: row}>
-<img alt="accordion" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
-<img alt="paged-accordion" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
+<img alt="accordion" src="https://github.com/121Unicorns/react-native-unicorn/blob/main/screenshots/accordion.gif" height="600" width="270"/>
+<img alt="paged-accordion" src="https://github.com/121Unicorns/react-native-unicorn/blob/main/screenshots/accordion-2.gif" height="600" width="270"/>
 </div>
 </details>
 
@@ -116,9 +116,7 @@ import Avatar from 'react-native-unicorn/avatar'
 ```
 <br>
 <div style={flex-direction: row}>
-<img alt="square-avatar" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
-<img alt="circle-avatar" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
-<img alt="drop-avatar" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
+<img alt="square-avatar" src="https://github.com/121Unicorns/react-native-unicorn/blob/main/screenshots/avatar.png" height="600" width="270"/>
 </div>
 </details>
 
@@ -150,7 +148,7 @@ import BarGraph from 'react-native-unicorn/bar-graph'
 ```
 <br>
 <div>
-<img alt="bar graph" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
+<img alt="bar graph" src="https://github.com/121Unicorns/react-native-unicorn/blob/main/screenshots/bargraph.png" height="600" width="270"/>
 </div>
 </details>
 
@@ -179,7 +177,7 @@ import BouncingDots from 'react-native-unicorn/dots'
 ```
 <br>
 <div>
-<img alt="dots" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
+<img alt="dots" src="https://github.com/121Unicorns/react-native-unicorn/blob/main/screenshots/dots.gif" height="600" width="270"/>
 </div>
 </details>
 
@@ -210,7 +208,7 @@ import Card from 'react-native-unicorn/card'
 ```
 <br>
 <div>
-<img alt="card" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
+<img alt="card" src="https://github.com/121Unicorns/react-native-unicorn/blob/main/screenshots/card.png" height="600" width="270"/>
 </div>
 </details>
 
@@ -240,7 +238,7 @@ import Carousel from 'react-native-unicorn/dots'
 ```
 <br>
 <div>
-<img alt="carousel" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
+<img alt="carousel" src="https://github.com/121Unicorns/react-native-unicorn/blob/main/screenshots/carousel.gif" height="600" width="270"/>
 </div>
 </details>
 
@@ -293,7 +291,7 @@ import Checkbox from 'react-native-unicorn/checkbox';
 
 <br>
 <div>
-<img alt="checkbox" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
+<img alt="checkbox" src="https://github.com/121Unicorns/react-native-unicorn/blob/main/screenshots/checkbox.png" height="600" width="270"/>
 </div>
 </details>
 
@@ -351,7 +349,7 @@ import CircularGraph from 'react-native-unicorn/circular-graph';
 
 <br>
 <div>
-<img alt="circular-graph" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
+<img alt="circular-graph" src="https://github.com/121Unicorns/react-native-unicorn/blob/main/screenshots/circular.png" height="600" width="270"/>
 </div>
 </details>
 
@@ -394,7 +392,7 @@ import Countdown from 'react-native-unicorn/countdown';
 
 <br>
 <div>
-<img alt="countdown" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
+<img alt="countdown" src="https://github.com/121Unicorns/react-native-unicorn/blob/main/screenshots/countdown.gif" height="600" width="270"/>
 </div>
 </details>
 
@@ -439,7 +437,7 @@ import CounterBox from 'react-native-unicorn/counterBox';
 
 <br>
 <div>
-<img alt="counter-box" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
+<img alt="counter-box" src="https://github.com/121Unicorns/react-native-unicorn/blob/main/screenshots/counterbox.png" height="600" width="270"/>
 </div>
 </details>
 
@@ -497,7 +495,7 @@ import CustomInput from 'react-native-unicorn/custom-input';
 
 <br>
 <div>
-<img alt="custom-input" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
+<img alt="custom-input" src="https://github.com/121Unicorns/react-native-unicorn/blob/main/screenshots/input.png" height="600" width="270"/>
 </div>
 </details>
 
@@ -545,7 +543,7 @@ import DropDown from 'react-native-unicorn/dropdown';
 
 <br>
 <div>
-<img alt="dropdown" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
+<img alt="dropdown" src="https://github.com/121Unicorns/react-native-unicorn/blob/main/screenshots/dropdown.gif" height="600" width="270"/>
 </div>
 </details>
 
@@ -581,7 +579,7 @@ import { Grid } from 'react-native-unicorn/grid';
 
 <br>
 <div>
-<img alt="grid" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
+<img alt="grid" src="https://github.com/121Unicorns/react-native-unicorn/blob/main/screenshots/grid.png" height="600" width="270"/>
 </div>
 </details>
 
@@ -618,7 +616,7 @@ import { OTPInput } from './otp-input';
 
 <br>
 <div>
-<img alt="otp-input" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
+<img alt="otp-input" src="https://github.com/121Unicorns/react-native-unicorn/blob/main/screenshots/otp.gif" height="600" width="270"/>
 </div>
 </details>
 
@@ -660,7 +658,7 @@ value) => console.log(`Password value is ${value}`)}
 
 <br>
 <div>
-<img alt="password-input" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
+<img alt="password-input" src="https://github.com/121Unicorns/react-native-unicorn/blob/main/screenshots/password.gif" height="600" width="270"/>
 </div>
 </details>
 
@@ -702,7 +700,7 @@ import { PhoneNumberInput } from './phone-input';
 
 <br>
 <div>
-<img alt="phone-input" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
+<img alt="phone-input" src="https://github.com/121Unicorns/react-native-unicorn/blob/main/screenshots/phone.gif" height="600" width="270"/>
 </div>
 </details>
 
@@ -746,7 +744,7 @@ import { RadioButton } from './radio-button';
 
 <br>
 <div>
-<img alt="radio-button" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
+<img alt="radio-button" src="https://github.com/121Unicorns/react-native-unicorn/blob/main/screenshots/radiobutton.gif" height="600" width="270"/>
 </div>
 </details>
 
@@ -782,6 +780,6 @@ In this example, the `VerticalStepper` component is used to display a vertical s
 
 <br>
 <div>
-<img alt="vertical-stepper" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
+<img alt="vertical-stepper" src="https://github.com/121Unicorns/react-native-unicorn/blob/main/screenshots/stepper.png" height="600" width="270"/>
 </div>
 </details>
