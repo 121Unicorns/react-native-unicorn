@@ -14,24 +14,24 @@ npm i react-native-unicorn
 
 | Component | Description                |
 | :------------- | :------------------------- |
-| [Accordion]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#accordion")| A customizable accordion-style list component for React Native applications. It allows you to display a list of items with expandable content sections. |
-|[Avatar]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#avatar")| A customizable image component for displaying user avatars or other images in different shapes and sizes. |
-|[Bar Graph]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#bar-graph")| A customizable bar graph component that allows you to display a bar graph. |
-|[Bouncing Dots]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#bouncing-dots")| A customizable loading animation component for that displays a series of dots bounce in a sequence |
-|[Card]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#card")| A customizable card component that allows you to display content within a styled card layout.|
-|[Carousel]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#carousel")| A customizable carousel component that allows you to display a list of items in a horizontally scrollable carousel layout.|
-|[Checkbox]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#checkbox")| A customizable checkbox component |
-|[Circular Graph]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#circular-graph")| A a customizable circular graph component that allows you to display a circular progress graph with an optional percentage label in the center. |
-|[Countdown Timer]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#countdown-timer")| A is a customizable countdown component that  allows you to display a countdown timer that triggers a callback function when the time is up. |
-|[Counter Box]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#counter-box")| A customizable counter component that allows you to display a counter with increment and decrement buttons.|
-|[Custom Input]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#custom-input")| A component for |
-|[DropDown]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#dropdown")| A component for |
-|[Grid]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#grid")| A component for |
-|[OTP Input]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#otp-input")| A component for |
-|[Password Input]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#password-input")| A component for |
-|[Phone Input]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#phone-input")| A component for |
-|[Radio Button]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#radio-button")| A component for |
-|[Vertical Stepper]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#vertical-stepper")| A component for |
+| [Accordion]("https://github.com/121Unicorns/react-native-unicorn/main/README.md#accordion")| A customizable accordion-style list component for React Native applications. It allows you to display a list of items with expandable content sections. |
+|[Avatar]("https://github.com/121Unicorns/react-native-unicorn/main/README.md#avatar")| A customizable image component for displaying user avatars or other images in different shapes and sizes. |
+|[Bar Graph]("https://github.com/121Unicorns/react-native-unicorn/main/README.md#bar-graph")| A customizable bar graph component that allows you to display a bar graph. |
+|[Bouncing Dots]("https://github.com/121Unicorns/react-native-unicorn/main/README.md#bouncing-dots")| A customizable loading animation component for that displays a series of dots bounce in a sequence |
+|[Card]("https://github.com/121Unicorns/react-native-unicorn/main/README.md#card")| A customizable card component that allows you to display content within a styled card layout.|
+|[Carousel]("https://github.com/121Unicorns/react-native-unicorn/main/README.md#carousel")| A customizable carousel component that allows you to display a list of items in a horizontally scrollable carousel layout.|
+|[Checkbox]("https://github.com/121Unicorns/react-native-unicorn/main/README.md#checkbox")| A customizable checkbox component |
+|[Circular Graph]("https://github.com/121Unicorns/react-native-unicorn/main/README.md#circular-graph")| A a customizable circular graph component that allows you to display a circular progress graph with an optional percentage label in the center. |
+|[Countdown Timer]("https://github.com/121Unicorns/react-native-unicorn/main/README.md#countdown-timer")| A is a customizable countdown component that  allows you to display a countdown timer that triggers a callback function when the time is up. |
+|[Counter Box]("https://github.com/121Unicorns/react-native-unicorn/main/README.md#counter-box")| A customizable counter component that allows you to display a counter with increment and decrement buttons.|
+|[Custom Input]("https://github.com/121Unicorns/react-native-unicorn/main/README.md#custom-input")| A component for |
+|[DropDown]("https://github.com/121Unicorns/react-native-unicorn/main/README.md#dropdown")| A component for |
+|[Grid]("https://github.com/121Unicorns/react-native-unicorn/main/README.md#grid")| A component for |
+|[OTP Input]("https://github.com/121Unicorns/react-native-unicorn/main/README.md#otp-input")| A component for |
+|[Password Input]("https://github.com/121Unicorns/react-native-unicorn/main/README.md#password-input")| A component for |
+|[Phone Input]("https://github.com/121Unicorns/react-native-unicorn/main/README.md#phone-input")| A component for |
+|[Radio Button]("https://github.com/121Unicorns/react-native-unicorn/main/README.md#radio-button")| A component for |
+|[Vertical Stepper]("https://github.com/121Unicorns/react-native-unicorn/main/README.md#vertical-stepper")| A component for |
 
 
 ## Components
