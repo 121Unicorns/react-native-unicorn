@@ -34,6 +34,7 @@ npm i react-native-unicorn
 |[Vertical Stepper]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#vertical-stepper")| A customizable vertical stepper component.|
 
 <br>
+
 ## Components
 
 ## Accordion
