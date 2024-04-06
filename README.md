@@ -20,23 +20,28 @@ npm i react-native-unicorn
 |[Bouncing Dots]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#bouncing-dots")| A customizable loading animation component for that displays a series of dots bounce in a sequence |
 |[Card]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#card")| A customizable card component that allows you to display content within a styled card layout.|
 |[Carousel]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#carousel")| A customizable carousel component that allows you to display a list of items in a horizontally scrollable carousel layout.|
-|[Checkbox]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#checkbox")| A customizable checkbox component |
+|[Checkbox]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#checkbox")| A customizable checkbox component allows you to display a checkbox with a label.|
 |[Circular Graph]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#circular-graph")| A a customizable circular graph component that allows you to display a circular progress graph with an optional percentage label in the center. |
 |[Countdown Timer]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#countdown-timer")| A is a customizable countdown component that  allows you to display a countdown timer that triggers a callback function when the time is up. |
 |[Counter Box]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#counter-box")| A customizable counter component that allows you to display a counter with increment and decrement buttons.|
-|[Custom Input]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#custom-input")| A component for |
-|[DropDown]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#dropdown")| A component for |
-|[Grid]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#grid")| A component for |
-|[OTP Input]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#otp-input")| A component for |
-|[Password Input]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#password-input")| A component for |
-|[Phone Input]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#phone-input")| A component for |
-|[Radio Button]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#radio-button")| A component for |
-|[Vertical Stepper]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#vertical-stepper")| A component for |
+|[Custom Input]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#custom-input")| A customizable Text Input component that allows you to display a text input field with optional icon, placeholder, and custom styles.|
+|[DropDown]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#dropdown")| A customizable dropdown component that displays a dropdown list with selectable options, each of which can have an optional icon. |
+|[Grid]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#grid")| A customizable grid component that displays a table-like structure with rows and columns.|
+|[OTP Input]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#otp-input")| A customizable One-Time Password (OTP) input component that displays a series of input fields for OTP entry.|
+|[Password Input]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#password-input")| A customizable password input component.|
+|[Phone Input]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#phone-input")| A customizable phone number component that allows you to display a phone number input field with an integrated country code picker|
+|[Radio Button]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#radio-button")| A customizable radio button that allows you to display a group of radio buttons with selectable options.|
+|[Vertical Stepper]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#vertical-stepper")| A customizable vertical stepper component.|
 
+<br>
 
 ## Components
 
-## Accordion
+<details>
+<summary>
+  <h3>Accordion</h3>
+</summary>
+<br>
 
 The ```Accordion``` component is a versatile, customizable accordion-style list component for React Native applications. It allows you to display a list of items with expandable content sections.
 
@@ -80,10 +85,11 @@ import Accordion from 'react-native-unicorn/accordion'
 <img alt="accordion" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
 <img alt="paged-accordion" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
 </div>
+</details>
 
-<br>
-
-## Avatar
+<details>
+  <summary>
+<h3>Avatar</h3></summary>
 
 The ```Avatar``` component is a customizable image component for React Native applications. It allows you to display user avatars or other images in different shapes and sizes.
 
@@ -114,8 +120,12 @@ import Avatar from 'react-native-unicorn/avatar'
 <img alt="circle-avatar" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
 <img alt="drop-avatar" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
 </div>
+</details>
 
-## Bar Graph
+<details>
+<summary>
+  <h3>Bar Graph</h3>
+</summary>
 
 The ```BarGraph``` component is a customizable bar graph component for React Native applications. It allows you to display a bar graph with different statuses based on the percentage provided.
 
@@ -142,8 +152,10 @@ import BarGraph from 'react-native-unicorn/bar-graph'
 <div>
 <img alt="bar graph" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
 </div>
+</details>
 
-## Bouncing Dots
+<details>
+<summary><h3>Bouncing Dots</h3></summary>
 
 The ```BouncingDots``` component is a customizable loading animation component that displays a series of dots that bounce in a sequence, creating a smooth loading animation.
 
@@ -169,9 +181,10 @@ import BouncingDots from 'react-native-unicorn/dots'
 <div>
 <img alt="dots" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
 </div>
+</details>
 
-
-## Card
+<details>
+<summary><h3>Card</h3></summary>
 
 The ```Card``` component is a customizable card component that allows you to display content within a styled card layout.
 
@@ -199,8 +212,10 @@ import Card from 'react-native-unicorn/card'
 <div>
 <img alt="card" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
 </div>
+</details>
 
-## Carousel
+<details>
+<summary><h3>Carousel</h3></summary>
 
 The ```Carousel``` component is a customizable carousel component that allows you to display a list of items in a horizontally scrollable carousel layout.
 
@@ -227,9 +242,10 @@ import Carousel from 'react-native-unicorn/dots'
 <div>
 <img alt="carousel" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
 </div>
+</details>
 
-
-## Checkbox
+<details>
+<summary><h3>Checkbox</h3></summary>
 
 The `Checkbox` component is a customizable checkbox component that allows you to display a list of items in a horizontally scrollable checkbox layout.
 
@@ -279,8 +295,10 @@ import Checkbox from 'react-native-unicorn/checkbox';
 <div>
 <img alt="checkbox" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
 </div>
+</details>
 
-## CircularGraph
+<details>
+<summary><h3>CircularGraph</h3></summary>
 
 The `CircularGraph` component is a customizable circularGraph component that allows you to display a list of items in a horizontally scrollable circularGraph layout.
 
@@ -335,10 +353,12 @@ import CircularGraph from 'react-native-unicorn/circular-graph';
 <div>
 <img alt="circular-graph" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
 </div>
+</details>
 
-## Countdown
+<details>
+<summary><h3>Countdown</h3></summary>
 
-The `Countdown` component is a customizable countdown component that  allows you to display a countdown timer that triggers a callback function when the time is up.
+The `Countdown` component is a customizable countdown component that allows you to display a countdown timer that triggers a callback function when the time is up.
 
 The component accepts the following props:
 
@@ -376,8 +396,10 @@ import Countdown from 'react-native-unicorn/countdown';
 <div>
 <img alt="countdown" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
 </div>
+</details>
 
-## CounterBox
+<details>
+<summary><h3>CounterBox</h3></summary>
 
 The `CounterBox` component is a customizable CounterBox component that allows you to display a counter with increment and decrement buttons.
 
@@ -419,10 +441,12 @@ import CounterBox from 'react-native-unicorn/counterBox';
 <div>
 <img alt="counter-box" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
 </div>
+</details>
 
-## CustomInput
+<details>
+<summary><h3>CustomInput</h3></summary>
 
-The `CustomInput` component is a customizable CustomInput component that allows you to display a text input field with optional icon, placeholder, and custom styles.
+The `CustomInput` component is a customizable TextInput component that allows you to display a text input field with optional icon, placeholder, and custom styles.
 
 The component accepts the following props:
 
@@ -475,8 +499,10 @@ import CustomInput from 'react-native-unicorn/custom-input';
 <div>
 <img alt="custom-input" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
 </div>
+</details>
 
-## DropDown
+<details>
+<summary><h3>DropDown</h3></summary>
 
 The `DropDown` component is a customizable dropdown component that displays a dropdown list with selectable options, each of which can have an optional icon.
 
@@ -521,3 +547,241 @@ import DropDown from 'react-native-unicorn/dropdown';
 <div>
 <img alt="dropdown" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
 </div>
+</details>
+
+<details>
+<summary><h3>Grid</h3></summary>
+
+The `Grid` component is a customizable grid component that displays a table-like structure with rows and columns.
+
+The component accepts the following props:
+
+| Props | Description                |
+| :-------- | :------------------------- |
+|data|An array of objects representing the data to be displayed in the grid. Each object should have properties corresponding to the keys provided in the `keys` prop.|
+|columns|An array of strings representing the column headers of the grid.|
+|keys|An array of strings representing the keys of the data objects. The order of the keys determines the order of the columns in the grid.|
+|textStyle|An optional TextStyle object for customizing the style of the text in the grid cells.|
+
+#### Example
+
+```javascript
+import { Grid } from 'react-native-unicorn/grid';
+
+<Grid
+  data={[
+    { id: '1', name: 'John Doe', age: 30 },
+    { id: '2', name: 'Jane Doe', age: 25 },
+  ]}
+  columns={['ID', 'Name', 'Age']}
+  keys={['id', 'name', 'age']}
+  textStyle={{ color: 'black', fontSize: 16 }}
+/>
+```
+
+<br>
+<div>
+<img alt="grid" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
+</div>
+</details>
+
+<details>
+<summary><h3>OTPInput</h3></summary>
+
+The `OTPInput` component is a customizable One-Time Password (OTP) input component that displays a series of input fields for OTP entry. Long pressing on the first cell allows users to paste the OTP in all the cells.
+
+The component accepts the following props:
+
+| Props | Description                |
+| :-------- | :------------------------- |
+|length|The number of digits in the OTP.|
+|value|The initial value of the OTP.|
+|onOtpChange|A function that is called when the OTP value changes. The function receives the new OTP value.|
+|incorrect|A boolean indicating whether the entered OTP is incorrect. If true, the input fields are highlighted in red.|
+|textStyle|An optional TextStyle object for customizing the style of the text in the input fields.|
+|viewStyle|An optional string representing additional Tailwind CSS classes to be applied to the container view of the input fields.|
+
+#### Example
+
+```javascript
+import { OTPInput } from './otp-input';
+
+<OTPInput
+  length={6}
+  value="123456"
+  onOtpChange={(value) => console.log(`OTP value is ${value}`)}
+  incorrect={false}
+  textStyle={{ color: 'black', fontSize: 16 }}
+  viewStyle="bg-blue-500"
+/>
+```
+
+<br>
+<div>
+<img alt="otp-input" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
+</div>
+</details>
+
+<details>
+<summary><h3>PasswordInput</h3></summary>
+
+The `PasswordInput` component is a customizable password input component for React Native applications. It allows you to display a password input field with an integrated show/hide password toggle.
+
+The component accepts the following props:
+
+| Props | Description                |
+| :-------- | :------------------------- |
+|onChangePassword|A function that is called when the password value changes. The function receives the new password value.|
+|placeholder|An optional string representing the placeholder text to be displayed in the input field.|
+|placeholderTextColor|An optional string representing the color of the placeholder text.|
+|textStyle|An optional TextStyle object for customizing the style of the text in the input field.|
+|viewStyle|An optional string representing additional Tailwind CSS classes to be applied to the container view of the input field.|
+|disabled|An optional boolean indicating whether the input field is disabled.|
+|props|An optional object containing additional TextInputProps to be passed to the TextInput component.|
+
+#### Example
+
+```javascript
+import { PasswordInput } from './password-input';
+
+<PasswordInput
+  onChangePassword
+
+={(
+
+value) => console.log(`Password value is ${value}`)}
+  placeholder="Enter your password"
+  placeholderTextColor="#999999"
+  textStyle={{ color: 'black', fontSize: 16 }}
+  viewStyle="bg-blue-500"
+  disabled={false}
+/>
+```
+
+<br>
+<div>
+<img alt="password-input" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
+</div>
+</details>
+
+<details>
+<summary><h3>PhoneNumberInput</h3></summary>
+
+The `PhoneNumberInput` component is a customizable phone number component that allows you to display a phone number input field with an integrated country code picker.
+
+The component accepts the following props:
+
+| Props | Description                |
+| :-------- | :------------------------- |
+|onPhoneNumberChange|A function that is called when the phone number value changes. The function receives the new phone number value.|
+|placeholderTextColor|An optional string representing the color of the placeholder text.|
+|placeholder|An optional string representing the placeholder text to be displayed in the input field.|
+|textStyle|An optional TextStyle object for customizing the style of the text in the input field.|
+|viewStyle|An optional string representing additional Tailwind CSS classes to be applied to the container view of the input field.|
+|codeStyle|An optional string representing additional Tailwind CSS classes to be applied to the country code picker.|
+|props|An optional object containing additional TextInputProps to be passed to the TextInput component.|
+|disabled|An optional boolean indicating whether the input field is disabled.|
+|codes|An optional array of strings representing the country codes to be displayed in the country code picker.|
+
+#### Example
+
+```javascript
+import { PhoneNumberInput } from './phone-input';
+
+<PhoneNumberInput
+  onPhoneNumberChange={(value) => console.log(`Phone number value is ${value}`)}
+  placeholder="Enter your phone number"
+  placeholderTextColor="#999999"
+  textStyle={{ color: 'black', fontSize: 16 }}
+  viewStyle="bg-blue-500"
+  codeStyle="bg-gray-200"
+  disabled={false}
+  codes={['KE', 'UG', 'TZ']}
+/>
+```
+
+<br>
+<div>
+<img alt="phone-input" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
+</div>
+</details>
+
+<details>
+<summary><h3>RadioButton</h3></summary>
+
+The `RadioButton` component is a customizable radio button that allows you to display a group of radio buttons with selectable options.
+
+The component accepts the following props:
+
+| Props | Description                |
+| :-------- | :------------------------- |
+|data|An array of objects representing the options to be displayed as radio buttons. Each object should have an id and label property.|
+|type|A string representing the type of the radio button.|
+|onSelect|A function that is called when a radio button is selected. The function receives the value of the selected option.|
+|orientation|A string representing the orientation of the radio buttons. It can be 'horizontal' or 'vertical'.|
+|viewStyle|An optional string representing additional Tailwind CSS classes to be applied to the container view of the radio buttons.|
+|textStyle|An optional TextStyle object for customizing the style of the text in the radio buttons.|
+|width|An optional string representing the width of the radio buttons.|
+|defaultSelected|An optional object representing the default selected option.|
+
+#### Example
+
+```javascript
+import { RadioButton } from './radio-button';
+
+<RadioButton
+  data={[
+    { id: '1', label: 'Option 1' },
+    { id: '2', label: 'Option 2' },
+  ]}
+  type="circle"
+  onSelect={(value) => console.log(`Selected value is ${value}`)}
+  orientation="horizontal"
+  viewStyle="bg-blue-500"
+  textStyle={{ color: 'white', fontSize: 16 }}
+  width="50%"
+  defaultSelected={{ id: '1', label: 'Option 1' }}
+/>
+```
+
+<br>
+<div>
+<img alt="radio-button" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
+</div>
+</details>
+
+<details>
+<summary><h3>VerticalStepper</h3></summary>
+
+The `VerticalStepper` component is a customizable vertical stepper component for React Native applications. It allows you to display a series of steps in a vertical layout.
+
+The component accepts the following props:
+
+| Props | Description                |
+| :-------- | :------------------------- |
+|steps|An array of objects representing the steps to be displayed in the stepper. Each object should have a title and component property, and an optional pointStyle property.|
+|viewStyle|An optional string representing additional Tailwind CSS classes to be applied to the container view of the stepper.|
+|textStyle|An optional TextStyle object for customizing the style of the text in the stepper.|
+
+#### Example
+
+```javascript
+import { VerticalStepper } from './vertical-stepper';
+
+<VerticalStepper
+  steps={[
+    { title: 'Step 1', component: <Text>Step 1 Content</Text> },
+    { title: 'Step 2', component: <Text>Step 2 Content</Text>, pointStyle: 'bg-red-500' },
+  ]}
+  viewStyle="bg-blue-500"
+  textStyle={{ color: 'white', fontSize: 16 }}
+/>
+```
+
+In this example, the `VerticalStepper` component is used to display a vertical stepper with two steps: 'Step 1' and 'Step 2'. The content of each step is a Text component. The point of 'Step 2' has a red background. The container view of the stepper has a blue background. The text in the stepper is white and has a font size of 16.
+
+<br>
+<div>
+<img alt="vertical-stepper" src="https://via.placeholder.com/180x240?text=App+Screenshot+Here"/>
+</div>
+</details>
