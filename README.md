@@ -20,12 +20,12 @@ npm i react-native-unicorn
 |[Bouncing Dots]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#bouncing-dots")| A customizable loading animation component for that displays a series of dots bounce in a sequence |
 |[Card]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#card")| A customizable card component that allows you to display content within a styled card layout.|
 |[Carousel]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#carousel")| A customizable carousel component that allows you to display a list of items in a horizontally scrollable carousel layout.|
-|[Checkbox]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#checkbox")| A customizable checkbox component |
+|[Checkbox]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#checkbox")| A customizable checkbox component allows you to display a checkbox with a label.|
 |[Circular Graph]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#circular-graph")| A a customizable circular graph component that allows you to display a circular progress graph with an optional percentage label in the center. |
 |[Countdown Timer]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#countdown-timer")| A is a customizable countdown component that  allows you to display a countdown timer that triggers a callback function when the time is up. |
 |[Counter Box]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#counter-box")| A customizable counter component that allows you to display a counter with increment and decrement buttons.|
-|[Custom Input]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#custom-input")| A component for |
-|[DropDown]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#dropdown")| A component for |
+|[Custom Input]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#custom-input")| A customizable Text Input component that allows you to display a text input field with optional icon, placeholder, and custom styles.|
+|[DropDown]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#dropdown")| A customizable dropdown component that displays a dropdown list with selectable options, each of which can have an optional icon. |
 |[Grid]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#grid")| A component for |
 |[OTP Input]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#otp-input")| A component for |
 |[Password Input]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#password-input")| A component for |
