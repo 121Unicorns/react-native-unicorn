@@ -24,7 +24,7 @@ npm i react-native-unicorn
 |[Circular Graph]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#circular-graph")| A a customizable circular graph component that allows you to display a circular progress graph with an optional percentage label in the center. |
 |[Countdown Timer]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#countdown-timer")| A is a customizable countdown component that  allows you to display a countdown timer that triggers a callback function when the time is up. |
 |[Counter Box]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#counter-box")| A customizable counter component that allows you to display a counter with increment and decrement buttons.|
-|[Custom Input]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#custom-input")| A customizable Text Input component that allows you to display a text input field with optional icon, placeholder, and custom styles.|
+|[Input]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#custom-input")| A customizable Text Input component that allows you to display a text input field with optional icon, placeholder, and custom styles.|
 |[DropDown]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#dropdown")| A customizable dropdown component that displays a dropdown list with selectable options, each of which can have an optional icon. |
 |[Grid]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#grid")| A customizable grid component that displays a table-like structure with rows and columns.|
 |[OTP Input]("https://github.com/121Unicorns/react-native-unicorn/edit/main/README.md#otp-input")| A customizable One-Time Password (OTP) input component that displays a series of input fields for OTP entry.|
@@ -443,7 +443,7 @@ import CounterBox from 'react-native-unicorn/counterBox';
 </details>
 
 <details>
-<summary><h3>CustomInput</h3></summary>
+<summary><h3>Input</h3></summary>
 
 The `CustomInput` component is a customizable TextInput component that allows you to display a text input field with optional icon, placeholder, and custom styles.
 
